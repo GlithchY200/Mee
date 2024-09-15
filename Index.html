@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MUNCH BOX</title>
+    <link rel="stylesheet" href="G:\My CodeZ\Projo\Ztyle.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <!-- Logo and Name to the Left -->
+            <div class="navbar-left">
+                <a href="#home" class="Medilop">
+                    <img src="C:\Users\dcmwi\Downloads\munch log.png" alt="Logo">
+                    <strong>MUNCHBOX</strong>
+                </a>
+            </div>
+    
+            <!-- Navigation Links to the Right -->
+            <div class="navbar-right">
+                <a href="#home" class="homer">Home</a>
+                <a href="#services" class="service">Services</a>
+                <a href="#facility" class="facility">Facility</a>
+                <a href="#about" class="about">About Us</a>
+                <a href="#login" class="log">Menu</a>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    
+        <div class="container">
+            <div class="kin">
+                <h1 class="head1"><strong>Your Dining <br>Made Beautiful</strong></h1>
+                <div class="parag">
+                    Our state of the art equipment and world-class chefs make your dining with us a true delight.<br><br>
+                    Enjoy fine dining with our establishment as you make memories with us.
+                </div>
+                <button id="button">Order Now</button>
+            </div>
+            <img src="C:\Users\dcmwi\Downloads\burger-with-melted-cheese.jpg" 
+                alt="Burger with melted cheese" class="image">
+        </div>
+        <div class="sub-container44">
+                <div class="span-div">
+                    <span id="satisfaction" class="sub-span">95%</span>
+                    <p class="span-text">Satisfaction</p>
+                </div>
+                <div class="span-div">
+                    <span id="employed" class="sub-span">1,500+</span>
+                    <p class="span-text">Employed</p>
+                </div>
+                <div class="span-div">
+                    <span id="customers" class="sub-span">3,000+</span>
+                    <p class="span-text">Satisfied Customers</p>
+                </div>
+                <div class="span-div">
+                    <span id="transparency" class="sub-span">100%</span>
+                    <p class="span-text">Transparency</p>
+                </div>
+            </div>
+            
+        <script>
+            // Function to create the count-up animation
+function countUp(elementId, start, end, duration) {
+    const element = document.getElementById(elementId);
+    let startTime = null;
+
+    // Defining the step function
+    function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const current = Math.min(Math.ceil(start + (progress / duration) * (end - start)), end);
+        element.textContent = current + (elementId === 'satisfaction' || elementId === 'transparency' ? '%' : '+');  // Adding appropriate suffix
+        if (current < end) {
+            window.requestAnimationFrame(step);
+        }
+    }
+    window.requestAnimationFrame(step);
+}
+
+// Running the function when the page loads
+window.onload = function() {
+    countUp('satisfaction', 0, 95, 2000);    // Count up for Satisfaction
+    countUp('employed', 0, 1500, 2500);      // Count up for Employed
+    countUp('customers', 0, 3000, 3000);     // Count up for Satisfied Customers
+    countUp('transparency', 0, 100, 2000);   // Count up for Transparency
+};
+
+        </script>
+    </div class="ourbestservice" flexbox>
+    <div style="text-align: center; font-size: 3rem;">Our Best <strong>Services</strong></div>
+    <div class="bestservice">
+        <div class="sub-bestservice" style="padding: 30px; background-color: #ffb535; margin: 10px;">
+            <span class="myimage"><img 
+                src="C:\Users\dcmwi\Downloads\6-opt-3-1024x731.jpg" alt="cuisine" style="width: 200px; 
+                border-radius: 50%; height: 200px;"></span>
+            <p class="caps">State of the art Cuisine</p>
+            
+        </div>
+        <div class="sub-bestservice" style="padding: 30px; background-color: #ffb535; margin: 10px;">
+            <span><img 
+                src="C:\Users\dcmwi\Downloads\qualifications-to-become-a-chef.png" alt="chef" style="width: 200px; 
+                border-radius: 50%; height: 200px;"></span>
+            <p class="caps">World Reknown Chefs</p>
+            
+        </div>
+        <div class="sub-bestservice" style="padding: 30px; background-color: #ffb535; margin: 10px;">
+            <span class="myimage"><img 
+                src="C:\Users\dcmwi\Downloads\0_6Px9kVNYpWgBNYy3.jpg" alt="customer" style="width: 200px; 
+                border-radius: 50%; height: 200px;"></span>
+            <p class="caps">Million Customers</p>
+            
+        </div>
+                    
+        </div>
+        <div class="container">
+            <div class="otherpics">
+                <div>
+                    <img src="G:\My CodeZ\Projo\Blog-post_barbecue.jpg" alt="Barbecue">
+                    <p>Barbecue</p>
+                </div>
+                <div>
+                    <img src="G:\My CodeZ\Projo\warings–_0016_Pastry-brunch-box-plain-3.jpg" alt="pastry">
+                    <p>Pastry</p>
+                </div>
+                <div>
+                    <img src="G:\My CodeZ\Projo\desserts-update.jpg" alt="dessert">
+                    <p>Desserts</p>
+                </div>
+                <div>
+                    <img src="G:\My CodeZ\Projo\Homemade-Creamy-Vegtable-Soup-Recipe-1200.jpg" alt="soup">
+                    <p>Soups</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <div style="font-weight: bold; margin-left: 50px;">Are You Looking For:</div>
+    <div class="more">
+        <div style="padding: 20px; background-color: #ffb535;margin: 20px;">
+            <span>Chefs</span>
+            <p>A one on one with our chefs</p>
+        </div>
+        <div style="padding: 20px; background-color: #ffb535; margin: 20px;">
+            <span>Nutrition information</span>
+            <p>Giving you the best info</p>
+        </div>
+        <div style="padding: 20px; background-color: #ffb535; margin: 20px;">
+            <span>Healthy</span>
+            <p>Food Is Health</p>
+        </div>
+        <div style="padding: 20px; background-color: #ffb535; margin: 20px;">
+            <span>Good Food</span>
+            <p>We've definitely got it</p>
+        </div>
+    </div>
+    <div style="text-align: center; font-size: 2rem;">Our Best <strong>Chefs</strong></div>
+    <div class="main-doctors">
+        <div class="doctors" style="padding: 20px; background-color: #ffb535; margin: 10px;">
+            <span><img src="G:\My CodeZ\Projo\dru.jpg" alt="dru" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Chef Dru Wanyo</p>
+            <p>Lead Chef</p>
+            
+        </div>
+        <div class="doctors" style="padding: 20px; background-color: #ffb535; margin: 10px;">
+            <span><img src="G:\My CodeZ\Projo\meghan.jpg" alt="meg" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Chef Meghan Wambui</p>
+            <p>Sous Chef</p>
+            
+        </div>
+        <div class="doctors" style="padding: 20px; background-color: #ffb535; margin: 10px;">
+            <span><img src="G:\My CodeZ\Projo\taraji.jpg" alt="tar" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Chef Taraji Amani</p>
+            <p>Soup Chef</p>
+            
+        </div>
+        <div class="doctors" style="padding: 20px; background-color: #ffb535; margin: 10px;">
+            <span><img src="G:\My CodeZ\Projo\chris.jpg" alt="chris" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Chef Chris Kamau</p>
+            <p>Culinary Master</p>
+            
+        </div>
+    </div>
+    <div style="text-align: center; font-size: 2rem; margin-top: 20px; margin-bottom: 20px;">Easy Steps And 
+        <strong>Get Your Solution</strong>
+    </div>
+    <div class="someinfo">
+        <div>
+            <span><img src="G:\My CodeZ\Projo\5y6oje4ndveh3twh2rr77ffoll5g6ou.jpg" alt="menu" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Check Menu</p>
+            
+        </div>
+        <div>
+            <span><img src="G:\My CodeZ\Projo\intro-1678721736.jpg" alt="wait" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Request Consultation</p>
+            
+        </div>
+        <div>
+            <span><img src="G:\My CodeZ\Projo\what-waiters-really-think-thegem-blog-default.jpg" alt="receive" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Receive Your Order</p>
+            
+        </div>
+        <div>
+            <span><img src="G:\My CodeZ\Projo\194690914.jpg" alt="solulu" style="width: 150px; 
+                height: 150px;"></span>
+            <p>Get Your Solution</p>
+            
+        </div>
+    </div>
+    <div class="Doctor22">
+        <div class="sub-doctor22">
+            <div style="font-size: 2rem; text-align: left; margin-top: 20px;margin-bottom: 20px;
+            ">
+                Best Cuisine <strong>Anywhere <br>And Anytime</strong></div>
+            <p>This is where you find the best dishes across the globe.
+                <br>Search and Explore.</p>
+            <p>Our reputation is Umatched.<br>We are Here for You!</p><br><br>
+            <button class="button44">Explore Menu</button>
+        </div>
+        <span><img src="G:\My CodeZ\Projo\spaghetti-carbonara-382837d.jpg" alt="cuis" style="margin-left: 20px;
+        height: 500px;"></span>
+    </div>
+    <div class="onlinecare">
+        <span><img src="G:\My CodeZ\Projo\pengiriman-barang-delivery-planning-system-3-1024x558.png" alt="deli" style="margin-left: 20px;"></span>
+        <div>
+            <p>
+                Urgent <strong>Online Care</strong> For you</p>
+            <p>We ensure our deliveries are fast and on time to make you satisfied and happy.</p>
+            <p>We keep you happy anytime you order from us.</p>
+            <button style="background-color: f4c242;
+            color: aliceblue; width: 150px; height: 30px;">Order Now</button>
+        </div>
+    </div>
+    <div style="text-align: center; font-size: 3rem;">
+        What People Say <strong>About Us</strong></div>
+    <div class="about44">
+        <div>
+            <span><img src="G:\My CodeZ\Projo\measuring-customer-satisfaction-408402166[1].jpg" alt="cust 1" style="height: 500px; width: 600px;"></span>
+            <p>A Happy Satisfied Customer</p>
+        </div>
+        <div>
+            <span><img src="G:\My CodeZ\Projo\Satisfied-Customers.png" alt="cust 2"></span>
+            <p>One of our many Satisfied Customers</p>
+        </div>
+    </div>
+    <div style="display: flex; margin-left: 20px; align-items: center;">
+        <p style="font-size: 2rem; margin-right: 20px;">Join Our <strong>Community</strong>Now</p>
+        <button style="background-color: #ffb535; color: aliceblue; height: 30px;">
+            Join Now</button>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-about">
+                <h2>The Munch Box</h2>
+                <p>Where every Bite is a Delight!</p>
+              </div>
+          
+              <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>1234 Flavor Street, Food City</p>
+                <p>Email: info@themunchbox.com</p>
+                <p>Phone: (123) 456-7890</p>
+              </div>
+          
+              <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 10:00 AM - 10:00 PM</p>
+                <p>Sat-Sun: 11:00 AM - 11:00 PM</p>
+              </div>
+          
+              <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 The Munch Box | All rights reserved</p>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>
